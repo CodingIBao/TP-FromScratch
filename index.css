@@ -1,10 +1,21 @@
 
 body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(26, 26, 26);
     color: white;
 }
 
+header {
+    padding-top: 1em;
+}
+
+header,
+section {
+    padding-left: 1em;
+}
+
 .lien-g a {
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -13,6 +24,8 @@ body {
 .liens a {
     text-decoration: none;
     color: white;
+    padding-left: 10.3em;
+    margin-right: 2em;
 }
 
 nav {
@@ -27,20 +40,29 @@ section img {
 
 .synopsis {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 section {
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: space-between;
+    margin: 3em 1em 3em 0;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 5em;
+    margin-bottom: 0;
 }
 
 h2 {
+    font-size: 2em;
+    margin: 0;
     color: rgb(50, 50, 192);
+}
+
+p {
+    margin-top: 0.3em;
 }
 
 .listes ul {
@@ -48,16 +70,47 @@ h2 {
     padding: 0px;
 }
 
-.listes {
-    display: grid;
-    flex-direction: column;
-    justify-items: start
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgb(14, 14, 14);
+    border-radius: 10px;
+}
 
+.listes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .listes li {
+    font-weight: bold;
     margin: 1em;
     padding: 0.5em;
     background-color: rgb(50, 50, 192);
     border-radius: 10px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+.partenaires img {
+    padding-left: 7em;
+    margin-right: 5em;
+}
+
+h3,
+h4 {
+    margin: 1em;
+}
+
+h4 {
+    font-size: 1.3em;
+    padding-bottom: 2.3em;
+}
+
+footer img {
+    width: 100px;
 }
