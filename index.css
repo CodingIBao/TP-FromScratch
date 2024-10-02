@@ -1,125 +1,90 @@
-
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(26, 26, 26);
     color: white;
 }
 
-header {
-    padding-top: 1em;
-}
-
-header,
+nav,
 section {
-    padding-left: 1em;
-}
-
-.lien-g a {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.liens a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10.3em;
-    margin-right: 2em;
+    margin-left: 2em;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 2em;
 }
 
-section img {
-    height: 32em;
-    width: auto;
+.liens a {
+    margin-right: 2em;
+    padding-left: 13em;
 }
 
-.synopsis {
-    display: flex;
-    flex-direction: column;
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.lien-g {
+    font-size: 3em;
+}
+
+.liens {
+    font-size: 1.5em;
 }
 
 section {
+    margin-top: 6em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 3em 1em 3em 0;
+}
+
+.synopsis {
+    margin-right: 20em;
 }
 
 h1 {
-    font-size: 5em;
-    margin-bottom: 0;
+    margin: 0;
+    font-size: 7em;
 }
 
 h2 {
-    font-size: 2em;
     margin: 0;
-    color: rgb(50, 50, 192);
+    color: rgb(59, 59, 189);
+    font-size: 3em;
 }
 
 p {
-    margin-top: 0.3em;
+    font-size: 1.5em;
 }
 
-.listes ul {
-    list-style-type: none;
-    padding: 0px;
+section img {
+    width: 98%;
 }
 
 footer {
+    background: rgb(10, 10, 10);
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    background-color: rgb(14, 14, 14);
-    border-radius: 10px;
-}
-
-.listes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.listes li {
-    font-weight: bold;
-    margin: 1em;
-    padding: 0.5em;
-    background-color: rgb(50, 50, 192);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-}
-
-ul {
-    margin-top: 0;
-}
-
-.partenaires img {
-    padding-left: 7em;
-    margin-right: 5em;
 }
 
 h3,
 h4 {
-    font-size: 1.5em ;
-    margin: 1em;
+    font-size: 2em;
 }
 
-h4 {
-    padding-bottom: 2.3em;
+h3 {
+    padding-left: 1em;
 }
 
-.blasons {
-    height: 3.7em;
-    width: auto;
-}
-
-footer img {
-    width: 100px;
+.listes li {
+    display: flex;
+    justify-content: center;
+    background: rgb(59, 59, 189);
+    list-style-type: none;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    font-size: 1.5em;
 }
