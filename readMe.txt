@@ -1,7 +1,7 @@
 Hello world !
 
-Ici je partage mon avançait sur les TP des cours 'Parcours Complet : Mastering Front-End'
-Crée par Julien Azambourg alias From Scratch.
+"Ici, je partage mon avancement sur les TP des cours 'Parcours Complet : Mastering Front-End'.
+Créés par Julien Azambourg, alias From Scratch."
 
 
 - partie 1: HMTL
