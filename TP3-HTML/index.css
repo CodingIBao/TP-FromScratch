@@ -22,8 +22,8 @@ body {
 }
 
 nav {
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: bold; /* Mets le texte en gras */
+    text-transform: uppercase; /* Mets le texte en majuscule */
     display: flex;
     justify-content: center;
 }
@@ -89,7 +89,7 @@ h1 {
 
 .accueil-infos-container {
     margin: 0 5em;
-    max-width: 20em;
+    max-width: 20em; /* Permet de régler la largeur max de l'élément */
     min-width: 20em;
 }
 
@@ -109,8 +109,38 @@ h3 {
     background-color: rgb(224, 224, 224);
 }
 
+.accueil-news-header {
+    margin-left: 21.5em;
+    justify-items: start;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "titre boutton"
+    "texte boutton";
+}
+
 h2 {
+    margin-bottom: 0;
+    margin-top: 3em;
     text-transform: uppercase;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.accueil-news-header p {
+    padding-bottom: 4em;
+    margin-top: 0;
+    grid-area: texte;
+    font-weight: bold;
+}
+
+.accueil-news-header button {
+    font-weight: bold;
+    grid-area: boutton;
+    padding: 1em 3em;
+    margin-left: 10em;
 }
 
 .accueil-news-body {
@@ -132,3 +162,4 @@ h2 {
     border: transparent;
     color: #700990;
 }
+
