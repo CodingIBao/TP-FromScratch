@@ -36,7 +36,7 @@ nav a {
     color: #700990;
 }
 
-.button-nav {
+#button-nav {
     background-color: rgb(224, 224, 224);
     margin: 1em;
     border-radius: 10px;
@@ -152,7 +152,7 @@ nav a {
 
 .accueil-news {
     padding-top: 2em;
-    padding-bottom: 7em;
+    padding-bottom: 9em;
     background-color: rgb(238, 238, 238);
 }
 
@@ -249,8 +249,19 @@ nav a {
 }
 
 #accueil-contact-image-GC {
-padding: 7.5em 5em 10em 15em ;
+padding: 7.5em 5em 10em 22em ;
 height: 16em;
+}
+
+.accueil-contact-container1,
+.accueil-contact-container2,
+.accueil-contact-container3 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+    margin: 0 3em;
+    max-width: 18em;
+    font-weight: bold;
 }
 
 .accueil-contact h5 {
@@ -262,17 +273,6 @@ height: 16em;
     text-decoration: none;
 }
 
-.accueil-contact-container1,
-.accueil-contact-container2,
-.accueil-contact-container3 {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5em;
-    margin: 0 2em;
-    max-width: 20em;
-    font-weight: bold;
-}
-
 .accueil-contact-container1 {
     max-width: 15em;
 }
@@ -281,13 +281,21 @@ height: 16em;
     padding: 0.6em 0 0.6em 0;
 }
 
+.accueil-contact-container2 h5 {
+    margin-bottom: 1em;
+}
+
 .accueil-contact-container2 p {
-    line-height: 1.5em;
+    line-height: 1.8em;
+}
+
+.accueil-contact-container3-header h5 {
+    margin-bottom: 1em;
 }
 
 .accueil-contact-container3-footer h5 {
     margin-bottom: 0;
-    margin-top: 1em;
+    margin-top: 2em;
 
 }
 
@@ -304,3 +312,69 @@ height: 16em;
     padding: 0.5em;
 }
 
+
+/* --------------------------------------------------------------------------- */
+/* ACTUALITY */
+
+
+.accueil-actuality {
+    display: flex;    
+    align-items: center;
+    border-top: 1px solid rgb(238, 238, 238);
+    padding-left: 19em;
+}
+
+.accueil-actuality-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.accueil-actuality h6 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.accueil-actuality-left p {
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.accueil-actuality-right {
+    padding-left: 7em;
+}
+
+.accueil-actuality-right img {
+    margin-right: 2em;
+    padding-top: 1.5em;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* SPONSORS */
+
+
+.accueil-sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    padding-bottom: 2em;
+}
+
+.accueil-sponsors h5 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 2em;
+}
+
+.accueil-sponsors-logos img {
+    margin-right: 2em;
+    height: 2em;
+}
+
+
+
+/* ------------------------------------------------------------------------------------FIN--------------------------------------------------------------------------------------------------*/
