@@ -8,10 +8,14 @@ body {
 }
 
 button {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2em; /* Change l'espace entre les lettres */
     text-transform: uppercase;
     font-family: "Montserrat", "Montserrat-fallback", Arial, sans-serif;
 }
+
+
+/* --------------------------------------------------------------------------- */
+/* NAV */
 
 nav {
     font-weight: bold; /* Mets le texte en gras */
@@ -40,6 +44,11 @@ nav a {
     font-weight: bold;
 }
 
+
+/* --------------------------------------------------------------------------- */
+/* INTRO */
+
+
 .accueil-intro {
     background-image: url("./assets/img/bg.jpg");
     background-size: cover; /* L'image couvre toute la section sans distorsion */
@@ -61,7 +70,6 @@ nav a {
     color: white;
 }
 
-.button-infos,
 .button-intro {
     font-size: 1em;
     background-color: transparent;
@@ -71,15 +79,35 @@ nav a {
     color: white;
 }
 
+
+/* --------------------------------------------------------------------------- */
+/* SYNOPSIS */
+
+
 .accueil-synopsis {
-    padding: 1em;
-    max-width: 55em;
+    padding: 1.7em;
+    max-width: 60em;
     font-weight: bold;
     margin: 0 auto; /* Centre horizontalement l'élément */
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 1.6em;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* INFOS */
+
+
+.button-infos {
+    font-size: 1em;
+    background-color: transparent;
+    padding: 1em 3em;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+    letter-spacing: 0;
 }
 
 .accueil-infos {
@@ -117,6 +145,11 @@ nav a {
     margin-bottom: 2em;
 }
 
+
+/* --------------------------------------------------------------------------- */
+/* NEWS */
+
+
 .accueil-news {
     padding-top: 2em;
     padding-bottom: 7em;
@@ -151,10 +184,11 @@ nav a {
 }
 
 .accueil-news-header button {
+    font-size: 1em;
     background-color: transparent;
     font-weight: bold;
     grid-area: boutton;
-    padding: 1em 3em;
+    padding: 1em 1.5em;
     margin-left: 10em;
 }
 
@@ -168,6 +202,8 @@ nav a {
 .accueil-news-body img {
     height: 17em; /* Permet de régler la hauteur de l'image */
     width: auto;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .accueil-news-body h4 {
@@ -175,6 +211,7 @@ nav a {
 }
 
 .accueil-news-body p {
+    line-height: 1.5em;
     font-weight: bold;
 }
 
@@ -195,9 +232,75 @@ nav a {
 }
 
 .accueil-news-container2 p {
-    padding-bottom: 3.6em;
+    padding-bottom: 4.5em;
 }
 
 .accueil-news-container3 p{
-    padding-bottom: 2.4em;
+    padding-bottom: 3em;
 }
+
+
+/* --------------------------------------------------------------------------- */
+/* CONTACT */
+
+
+.accueil-contact {   
+    display: flex;
+}
+
+#accueil-contact-image-GC {
+padding: 7.5em 5em 10em 15em ;
+height: 16em;
+}
+
+.accueil-contact h5 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.accueil-contact a {
+    text-decoration: none;
+}
+
+.accueil-contact-container1,
+.accueil-contact-container2,
+.accueil-contact-container3 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+    margin: 0 2em;
+    max-width: 20em;
+    font-weight: bold;
+}
+
+.accueil-contact-container1 {
+    max-width: 15em;
+}
+
+.accueil-contact-container1 a {
+    padding: 0.6em 0 0.6em 0;
+}
+
+.accueil-contact-container2 p {
+    line-height: 1.5em;
+}
+
+.accueil-contact-container3-footer h5 {
+    margin-bottom: 0;
+    margin-top: 1em;
+
+}
+
+.accueil-contact-container3 p {
+    margin: 0;
+}
+
+.accueil-contact-logos {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.accueil-contact-logos a {
+    padding: 0.5em;
+}
+
