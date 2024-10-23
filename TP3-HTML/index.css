@@ -8,7 +8,7 @@ body {
 }
 
 button {
-    letter-spacing: 0.2em; /* Change l'espace entre les lettres */
+    letter-spacing: 0.2rem; /* Change l'espace entre les lettres */
     text-transform: uppercase;
     font-family: "Montserrat", "Montserrat-fallback", Arial, sans-serif;
 }
@@ -27,18 +27,18 @@ nav {
 nav a {
     color: black;
     text-decoration: none;
-    padding: 1em 3em;
+    padding: 1rem 3rem;
 }
 
 .open-page {
-    padding: 0.55em;
+    padding: 0.55rem;
     border-top: 6px #700990 solid;
     color: #700990;
 }
 
 #button-nav {
     background-color: rgb(224, 224, 224);
-    margin: 1em;
+    margin: 1rem;
     border-radius: 10px;
     border: transparent;
     font-weight: bold;
@@ -60,20 +60,20 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7.5em;
+    padding: 7.5rem;
 }
 
 .accueil-intro h1 {
-    padding-bottom: 0.5em;
-    font-size: 2em;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: white;
 }
 
 .button-intro {
-    font-size: 1em;
+    font-size: 1rem;
     background-color: transparent;
-    padding: 1em 3em;
+    padding: 1rem 3rem;
     font-weight: bold;
     border: 1px solid white;
     color: white;
@@ -85,14 +85,14 @@ nav a {
 
 
 .accueil-synopsis {
-    padding: 1.7em;
-    max-width: 60em;
+    padding: 1.7rem;
+    max-width: 60rem;
     font-weight: bold;
     margin: 0 auto; /* Centre horizontalement l'élément */
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.6rem;
 }
 
 
@@ -101,9 +101,9 @@ nav a {
 
 
 .button-infos {
-    font-size: 1em;
+    font-size: 1rem;
     background-color: transparent;
-    padding: 1em 3em;
+    padding: 1rem 3rem;
     font-weight: bold;
     border: 1px solid white;
     color: white;
@@ -111,7 +111,7 @@ nav a {
 }
 
 .accueil-infos {
-    padding: 7em 12.5em;
+    padding: 7rem 12.5rem;
     background-color: rgb(17, 17, 17);
     color: white;
     display:flex;
@@ -123,26 +123,26 @@ nav a {
 .accueil-infos-container1,
 .accueil-infos-container2,
 .accueil-infos-container3 {
-    margin: 0 5em;
-    max-width: 40em;
+    margin: 0 5rem;
+    max-width: 40rem;
 }
 
 .accueil-infos img {
-    height: 13em;
+    height: 13rem;
 }
 
 .accueil-infos h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
 .accueil-infos p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .accueil-infos img,
 .accueil-infos p {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 
@@ -151,16 +151,19 @@ nav a {
 
 
 .accueil-news {
-    padding-top: 2em;
-    padding-bottom: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 9rem;
     background-color: rgb(238, 238, 238);
 }
 
 .accueil-news-header {
-    margin-left: 21.5em;
+    display: grid;
     justify-items: start;
     align-items: center;
-    display: grid;
+    grid-column-gap: 15rem; /* Permet de définir l'espacement horizontal entre les éléments dans des conteneurs grid ou flexbox */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -170,48 +173,48 @@ nav a {
 
 .accueil-news h2 {
     margin-bottom: 0;
-    margin-top: 3em;
+    margin-top: 3rem;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: normal;
 }
 
 .accueil-news-header p {
-    padding-bottom: 4em;
+    padding-bottom: 4rem;
     margin-top: 0;
     grid-area: texte;
     font-weight: bold;
 }
 
 .accueil-news-header button {
-    font-size: 1em;
+    font-size: 1rem;
     background-color: transparent;
     font-weight: bold;
     grid-area: boutton;
-    padding: 1em 1.5em;
-    margin-left: 10em;
+    padding: 1rem 1.5rem;
+    margin-left: 9.5rem;
 }
 
 .accueil-news-body {
-    padding-left: 21.5em;
     display: grid;
+    gap: 7.5rem; /* Permet de définir l'espacement entre les éléments dans des conteneurs grid ou flexbox */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
 .accueil-news-body img {
-    height: 17em; /* Permet de régler la hauteur de l'image */
-    width: auto;
+    height: 17rem; /* Permet de régler la hauteur de l'élément */
+    width: auto; /* Permet de régler la largeur l'élément */
     border-radius: 5px;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .accueil-news-body h4 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .accueil-news-body p {
-    line-height: 1.5em;
+    line-height: 1.5rem;
     font-weight: bold;
 }
 
@@ -220,23 +223,23 @@ nav a {
     font-weight: bold;
     border: transparent;
     color: #700990;
-    padding-top: 2em;
+    padding-top: 2rem;
     padding-left: 0;
 }
 
 .accueil-news-container1,
 .accueil-news-container2,
 .accueil-news-container3 {
-    max-width: 21em;
-    min-width: 21em;
+    max-width: 21rem;
+    min-width: 21rem;
 }
 
 .accueil-news-container2 p {
-    padding-bottom: 4.5em;
+    padding-bottom: 4.5rem;
 }
 
 .accueil-news-container3 p{
-    padding-bottom: 3em;
+    padding-bottom: 3rem;
 }
 
 
@@ -249,8 +252,8 @@ nav a {
 }
 
 #accueil-contact-image-GC {
-padding: 7.5em 5em 10em 22em ;
-height: 16em;
+padding: 7.5rem 5rem 10rem 22rem ;
+height: 16rem;
 }
 
 .accueil-contact-container1,
@@ -258,15 +261,15 @@ height: 16em;
 .accueil-contact-container3 {
     display: flex;
     flex-direction: column;
-    padding-top: 5em;
-    margin: 0 3em;
-    max-width: 18em;
+    padding-top: 5rem;
+    margin: 0 3rem;
+    max-width: 18rem;
     font-weight: bold;
 }
 
 .accueil-contact h5 {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .accueil-contact a {
@@ -274,28 +277,28 @@ height: 16em;
 }
 
 .accueil-contact-container1 {
-    max-width: 15em;
+    max-width: 15rem;
 }
 
 .accueil-contact-container1 a {
-    padding: 0.6em 0 0.6em 0;
+    padding: 0.6rem 0 0.6rem 0;
 }
 
 .accueil-contact-container2 h5 {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .accueil-contact-container2 p {
-    line-height: 1.8em;
+    line-height: 1.8rem;
 }
 
 .accueil-contact-container3-header h5 {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .accueil-contact-container3-footer h5 {
     margin-bottom: 0;
-    margin-top: 2em;
+    margin-top: 2rem;
 
 }
 
@@ -305,11 +308,11 @@ height: 16em;
 
 .accueil-contact-logos {
     display: flex;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .accueil-contact-logos a {
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
 
@@ -317,11 +320,17 @@ height: 16em;
 /* ACTUALITY */
 
 
+#line-accueil-actuality {
+    height: 1px;
+    width: 58%;
+    background-color: rgb(238, 238, 238);
+    margin: 0 auto; /* Centre la ligne horizontalement */
+}
+
 .accueil-actuality {
     display: flex;    
     align-items: center;
-    border-top: 1px solid rgb(238, 238, 238);
-    padding-left: 19em;
+    padding-left: 19rem;
 }
 
 .accueil-actuality-left {
@@ -330,23 +339,23 @@ height: 16em;
 }
 
 .accueil-actuality h6 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .accueil-actuality-left p {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
     font-weight: bold;
 }
 
 .accueil-actuality-right {
-    padding-left: 7em;
+    padding-left: 7rem;
 }
 
 .accueil-actuality-right img {
-    margin-right: 2em;
-    padding-top: 1.5em;
+    margin-right: 2rem;
+    padding-top: 1.5rem;
 }
 
 
@@ -359,22 +368,19 @@ height: 16em;
     flex-direction: column;
     align-items: center;
     background-color: rgb(17, 17, 17);
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
 }
 
 .accueil-sponsors h5 {
     text-transform: uppercase;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: normal;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .accueil-sponsors-logos img {
-    margin-right: 2em;
-    height: 2em;
+    margin-right: 2rem;
+    height: 2rem;
 }
 
-
-
-/* ------------------------------------------------------------------------------------FIN--------------------------------------------------------------------------------------------------*/
