@@ -100,24 +100,13 @@ nav a {
 /* INFOS */
 
 
-.button-infos {
-    font-size: 1rem;
-    background-color: transparent;
-    padding: 1rem 3rem;
-    font-weight: bold;
-    border: 1px solid white;
-    color: white;
-    letter-spacing: 0;
-}
-
 .accueil-infos {
     padding: 7rem 12.5rem;
     background-color: rgb(17, 17, 17);
     color: white;
     display:flex;
-    justify-content: center;
+    justify-content: center; /* Ici permet d'être responsive plus longtemps sur la largeur d'écran */
     text-align: center;
-    align-items: center;
 }
 
 .accueil-infos-container1,
@@ -131,6 +120,11 @@ nav a {
     height: 13rem;
 }
 
+.accueil-infos img,
+.accueil-infos p {
+    margin-bottom: 2rem;
+}
+
 .accueil-infos h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -140,9 +134,14 @@ nav a {
     font-size: 1.2rem;
 }
 
-.accueil-infos img,
-.accueil-infos p {
-    margin-bottom: 2rem;
+.button-infos {
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+    letter-spacing: 0;
 }
 
 
@@ -249,11 +248,12 @@ nav a {
 
 .accueil-contact {   
     display: flex;
+    justify-content: center;
 }
 
 #accueil-contact-image-GC {
-padding: 7.5rem 5rem 10rem 22rem ;
-height: 16rem;
+    padding: 7.5rem 5rem 7.5rem 0;
+    height: 16rem;
 }
 
 .accueil-contact-container1,
@@ -330,7 +330,7 @@ height: 16rem;
 .accueil-actuality {
     display: flex;    
     align-items: center;
-    padding-left: 19rem;
+    justify-content: center
 }
 
 .accueil-actuality-left {
@@ -368,7 +368,7 @@ height: 16rem;
     flex-direction: column;
     align-items: center;
     background-color: rgb(17, 17, 17);
-    padding-bottom: 2rem;
+    padding: 1.3rem 0 3rem 0;
 }
 
 .accueil-sponsors h5 {
@@ -376,11 +376,16 @@ height: 16rem;
     color: white;
     font-size: 1.5rem;
     font-weight: normal;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-block-start: 0.5rem;
+}
+
+.accueil-sponsors-logos {
+    display: grid;
+    grid-template-columns: repeat(10, auto); /* Répartit les images sur 10 colonnes */
+    column-gap: 3rem; /* Espace horizontal entre les images */
 }
 
 .accueil-sponsors-logos img {
-    margin-right: 2rem;
-    height: 2rem;
+    transform: scale(1.2); /* Agrandit les images de 20% */
 }
-
