@@ -1,0 +1,95 @@
+/* 1 rem == 16px */
+
+:root {
+	--color1: blue;  /* Créer une variable avec une couleur d'enregistrer. Pour une bonne harmonie: 4 couleurs max par site */
+	--color2: white;
+	--color3: red;
+	--color4: black;
+}
+
+* {   /* l'asterix permet d'agir sur l'ensemble des éléments de la page */
+	margin: 0;   /* Mets toutes les marges exterieur par défaut à zéro */
+	padding: 0;   /* Mets toutes les amrges intérieurs par défaut à zéro */
+	box-sizing: border-box;   /* la largeur et la hauteur incluent le padding et les bordures, ce qui simplifie le positionnement et les calculs */
+}
+
+#jeSuisUne-id {}
+
+.jeSuisUne-class {
+	border-radius: 5px;   /* Permet d'arrondir tous les angles */
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 500); /* Permet de rajouter de l'ombre autour. Ici en bas et à droite de l'élément */
+	backdrop-filter: blur(5px); /* Permet de rendre le background flou */
+	height: 10rem; /* Règle la hauteur de l'élément */
+	width: 10rem; /* Règle la largeur de l'élément */
+}
+
+.jeSuisUne-class:before {
+	content: "\2730";   /* Permet d'ajouter directement un élément ou du texte sur l'élément sans passer par du html. Ici une étoile */
+	position: absolute;   /* Permet d'initialiser l'élément afin de le placer ou l'on veut sur la page */
+	top: 0;   /* Permet de le décaler sur l'axe vertical vers le haut */
+	right: 0;	/* Permet de le décaler sur l'axe horizontal vers la droite à notre élément */
+	font-size: 1rem;	/* Permet de définir une taille au texte (élément) */
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 20% 80%;   /* Permet de réprtir 2 éléments, le 1er à 20% de l'espacement horizontal et le second à 80% */
+	grid-template-rows: 50% 50%;   /* Permet de réprtir 2 éléments, le 1er et le second ont 50% de l'espacement vertical*/
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;   /* Mets les élément en colonnes (column) plutôt quand ligne (row) défini de base par le 'display:flex' */
+	align-items: center;   /* Si les éléments en 'row', centre les éléments sur l'axe horizontal */
+	justify-content: center;   /* Si les éléments en 'row', centre les éléments sur l'axe vertical */
+}
+
+.polygon {
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Transforme le background en une forme géométrique. Ici un losange */
+	background: linear-gradient(135deg, var(--color1) 0%, var(--color3) 100%);   /* Permet d'ajouter une couleur en dégradé à la forme géométrique. Ici du bleu vers le rouge */
+	height: 8rem;   /* Ici la hauteur de la forme géométrique est défini. Indispensable pour pouvoir la faire apparaître à l'écran et/ou sinon utiliser width pour la largeur. */
+}
+
+.polygon-container {
+	filter: drop-shadow(-1px 76px 3px var(--color4));   /* Permet de créer une ombre à la forme géométrique défini précédemment. */
+}
+
+.absolute {
+	position: absolute;    /* Permet de positionner ou l'on veut l'élément (de base est rattaché au 'body' de la page) */
+	top 50%; /* Permet de placer l'élément à la moitié du conteneur sur l'axe vertical (ici par rapport au 'body') */
+	left: 50%;   /* Permet de placer l'élément à la moitié du conteneur sur l'axe horizontal (ici par rapport au 'body' */
+	transform: translate(-50%, -50%); rotate: (0deg); /* Permet de placer l'élément à la moitié de lui même sur l'axe vertical et horizontal + de gérer la rotation de l'élément */
+}
+
+p {
+	line-height: 1rem;   /* Ajoute de l'espace entre les lignes */
+	display: -webkit-box;   /* Initialize la propriété webkit */
+	-webkit-box-orient: vertical;   /* Cette propriété spécifie l'orientation de la boîte en la forçant à s'empiler verticalement (dans le sens de la colonne) */
+	-webkit-line-clamp: 4;   /* Cette propriété limite le contenu de l'élément <p> à un nombre de lignes, ici quatre. Le texte qui dépasse cette limite sera masqué. */
+	overflow: hidden;   /* Cette propriété cache tout contenu qui dépasse la limite des quatre lignes spécifiées. */
+	text-align: justify;   /* permet d'aligner le texte de tous les éléments <p> de manière justifiée, ce qui répartit uniformément les mots sur chaque ligne pour un rendu plus équilibré */
+}
+
+p::selection {
+	background: var(--color3);   /* Cette propriété personnalise la couleur de fond du texte lorsqu'il est sélectionné (surbrillance avec la souris). Ici dans un paragraphe <p>. Possibilité de l'appliquer à d'autre éléments comme un titre (h1::selection {}) ou une div (.maDiv::selction {}) etc ... */
+}
+
+input[type="checkbox"] {   /* Sélectionne tous les éléments input de type checkbox */
+	display: none;   /*  Masque la case à cocher par défaut, rendant l'input invisible. */
+}
+
+label {   /*  Sélectionne tous les éléments label */
+	cursor: pointer;   /* Change le curseur en une main lors du survol, indiquant qu’il est cliquable. */
+	border: 1px solid var(--color3);   /* Donnent un contour arrondi et une bordure d'épaisseur 1px avec la couleur --color3 (une variable CSS). */
+	border-radius: 5px;   /* arrondi les angles du 'border' */
+	background: var(--color2);   /* Définit une couleur de fond de bouton. */
+	transition: 0.2s;   /* Ajoute une transition de 0,2 seconde pour tous les changements de style, rendant l'interaction plus fluide. */
+	user-select: none;   /* empêche l’utilisateur de sélectionner le texte du label avec la souris ou d’autres méthodes (comme un double-clic */
+}
+
+input[type="checkbox"]:checked + label {  /* Sélectionne l'élément label qui suit immédiatement un input de type checkbox quand celui-ci est coché (:checked). */
+	background: var(--color1);   /* Change la couleur d'arrière-plan du bouton au moment où la case est cochée. (ici en bleu) */
+	color: var(--color2);   /*  Change la couleur du texte du bouton au moment où la case est cochée. (ici en blanc) */
+	transform: scale(1.1);   /* Agrandit légèrement le label en augmentant sa taille de 10% lorsqu'il est coché. */
+	filter: brightness(120%);   /* augmente la luminosité de 20 % */
+}
