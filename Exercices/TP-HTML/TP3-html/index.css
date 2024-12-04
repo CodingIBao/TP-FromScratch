@@ -1,3 +1,7 @@
+
+/*////// PARTIE BONUS : A ce stade le CSS n'est pas encore demandé //////*/
+
+
 * {
     font-family: inherit; /* Le style de police est appliqué a tout les éléments*/
 }
@@ -14,7 +18,6 @@ button {
 }
 
 
-/* --------------------------------------------------------------------------- */
 /* NAV */
 
 nav {
@@ -45,12 +48,10 @@ nav a {
 }
 
 
-/* --------------------------------------------------------------------------- */
 /* INTRO */
 
-
 .accueil-intro {
-    background-image: url("./assets/img/bg.jpg");
+    background-image: url("../../../assets/Gaming\ Campus/img/bg.jpg");
     background-size: cover; /* L'image couvre toute la section sans distorsion */
     background-position: center; /* Centre l'image dans la section */
     background-repeat: no-repeat; /* Empêche l'image de se répéter */
@@ -80,9 +81,7 @@ nav a {
 }
 
 
-/* --------------------------------------------------------------------------- */
 /* SYNOPSIS */
-
 
 .accueil-synopsis {
     padding: 1.7rem;
@@ -96,9 +95,7 @@ nav a {
 }
 
 
-/* --------------------------------------------------------------------------- */
 /* INFOS */
-
 
 .accueil-infos {
     padding: 7rem 12.5rem;
@@ -145,9 +142,7 @@ nav a {
 }
 
 
-/* --------------------------------------------------------------------------- */
 /* NEWS */
-
 
 .accueil-news {
     display: flex;
@@ -242,9 +237,7 @@ nav a {
 }
 
 
-/* --------------------------------------------------------------------------- */
 /* CONTACT */
-
 
 .accueil-contact {   
     display: flex;
@@ -316,9 +309,7 @@ nav a {
 }
 
 
-/* --------------------------------------------------------------------------- */
 /* ACTUALITY */
-
 
 #line-accueil-actuality {
     height: 1px;
@@ -359,9 +350,7 @@ nav a {
 }
 
 
-/* --------------------------------------------------------------------------- */
 /* SPONSORS */
-
 
 .accueil-sponsors {
     display: flex;
