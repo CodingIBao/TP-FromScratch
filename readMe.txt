@@ -5,7 +5,7 @@ Créés par Julien Azambourg, alias From Scratch."
 
 
 - partie 1: HMTL
-- partie 1: CSS
+- partie 2: CSS
 
 - partie 3: GITHUB
 - partie 4: SEO
